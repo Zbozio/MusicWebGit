@@ -134,7 +134,7 @@ nav{
     flex-basis:100%;
     transform: translateY(-600px);
     
-    p{
+    .opis1{
         color:white;
         font-size:22px;
         
@@ -146,11 +146,11 @@ nav{
     width: 100%;
   }
   .col1{
-    margin-top: -25em;
+    margin-top: -35em;
     
     top: 50%;
     left: 50%;
-    transform: translate(-20%, 0%);
+    transform: translate(-5%, 0%);
 }
 
 h1{
@@ -178,12 +178,18 @@ button{
     
     
 }
-
+.opis{
+    margin-top: 6em;
+    margin-left: 7em;
+    color:white;
+    font-size: 25px;
+    
+}
 .card{
     float: right;
-    width:240px;
-    height:270px;
-    border-radius:5px;
+    width:180px;
+    height:200px;
+    border-radius:10px;
     padding: 0px 5px 5px 15px;
     box-sizing:border-box;
     cursor:pointer;
@@ -216,37 +222,45 @@ h2{
     color:white;
     margin-top:0;
     margin-left:-10px;
-    font-size:19px;
+    font-size:16.5px;
     pointer-events: none;
 }
 h3{
     color:white;
     margin-top:0;
-    margin-left:155px;
+    margin-left:97px;
     font-size:20px;
     pointer-events: none;
 }
-h4{
+.interpol{
     color:white;
-    margin-top:0;
-    margin-left:140px;
+    margin-top:-2px;
+    margin-left:85px;
     font-size:20px;
     pointer-events: none;
 }
 h5{
     color:white;
     margin-top: 0;
-    margin-left:40px;
-    font-size:18px;
+    margin-left:20px;
+    font-size:14px;
     pointer-events: none;
 }
 h6{
     color:white;
-    margin-top: 5px;
-    margin-left:110px;
+    margin-top: 2px;
+    margin-left:55px;
     font-size:19px;
     pointer-events: none;
 }
+.slowdive{
+    color:white;
+    margin-top: -2px;
+    margin-left:88px;
+    font-size:17px;
+    pointer-events: none;
+}
+
 .card6 h6{
     color:white;
     margin-top: 0;
@@ -523,7 +537,7 @@ background-image: url("../images/bloody.jpg");
     h2{
         color:white;
         margin-top:0;
-        margin-left:-10px;
+        margin-left:26px;
         font-size:19px;
         pointer-events: none;
     }
@@ -550,8 +564,23 @@ background-image: url("../images/bloody.jpg");
     }
     h6{
         color:white;
-        margin-top: 5px;
-        margin-left:110px;
+        margin-top: 1px;
+        margin-left:114px;
+        font-size:19px;
+        pointer-events: none;
+    }
+    .interpol{
+        color:white;
+        margin-top:-2px;
+        margin-left:140px;
+        font-size:20px;
+        pointer-events: none;
+    }
+   
+    .slowdive{
+        color:white;
+        margin-top: -4px;
+        margin-left:138px;
         font-size:19px;
         pointer-events: none;
     }
@@ -571,5 +600,8 @@ background-image: url("../images/bloody.jpg");
         left: 50%;
         transform: translate(0%, 20%);
         
+    }
+    .opis{
+        display: none;
     }
 }
