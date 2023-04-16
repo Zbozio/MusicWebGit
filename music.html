@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="css1/wyglad.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MusicHistory</title>
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+        <a class="logo" href="#">Music<span>History</span></a>
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.png">
+        <nav> 
+			<img id="mobile-exit" class="mobile-exit" src="images/exit.svg">
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Artists</a> </li>
+                <li><a href="#">Discography</a> </li>
+            </ul>
+            <ul class="secondary-nav">
+                <li><a href="#">Events</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+        
+  
+    </div>
+    <div class="row">
+            <div class="col">
+                <h1>Melancholy</h1>
+                <p>Melancholy is a feeling that touches us all. We've all experienced moments of sadness, longing, and nostalgia. Melancholia also inspires artists who create music, films, and literature that stir our hearts and minds. Join us in discovering the most beautiful works that are imbued with a melancholic atmosphere and touch us with their depth.</p> 
+                <button id="buttone" type="button">Explore</button>
+            </div>
+            <div class="col1">
+                <div  class="card card1" onmouseover="playAudio('myAudio')" onmouseout="pauseAudio('myAudio')">
+                    <h2 >My Bloody Valentine</h2>
+                    <audio id="myAudio">
+                        <source src="sounds/when.mp3" type="audio/mpeg">
+                    </audio>
+                    
+                </div>
+                <div class="card card2"onmouseover="playAudio('myAudio8')" onmouseout="pauseAudio('myAudio8')">
+                    <h6>Radiohead</h6>
+                    <audio id="myAudio8">
+                        <source src="sounds/no.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="card card3"onmouseover="playAudio('myAudio6')" onmouseout="pauseAudio('myAudio6')">
+                    <h4>Interpol</h4>
+                    <audio id="myAudio6">
+                        <source src="sounds/ob.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="card card4" onmouseover="playAudio('myAudio4')" onmouseout="pauseAudio('myAudio4')">
+                    <h5>The Neighbourhood</h5>
+                    <audio id="myAudio4">
+                        <source src="sounds/pre.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="card card5" onmouseover="playAudio('myAudio1')" onmouseout="pauseAudio('myAudio1')">
+                    <h3>The xx</h3>
+                    <audio id="myAudio1">
+                        <source src="sounds/xx.mp3" type="audio/mpeg">
+                    </audio>
+                
+                </div>
+                <div class="card card6"onmouseover="playAudio('myAudio3')" onmouseout="pauseAudio('myAudio3')">
+                    <h6>Slowdive</h6>
+                    <audio id="myAudio3">
+                        <source src="sounds/slow.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+        
+            </div>
+        </div>
+</div>
+
+    
+        
+
+
+
+
+<script>
+	const mobileBtn=document.getElementById('mobile-cta');
+		nav=document.querySelector('nav');
+		mobileBtnExit=document.getElementById('mobile-exit');
+	mobileBtn.addEventListener('click',()=>{
+		nav.classList.add('menu-btn')
+
+	})
+	mobileBtnExit.addEventListener('click',()=>{
+		nav.classList.remove('menu-btn')
+
+	})
+    
+    var intervalId=[];
+    var volume = 0.2;
+    
+function playAudio(audioId) {
+    
+    const audio = document.getElementById(audioId);
+    clearInterval(intervalId[audioId]); 
+    audio.currentTime = 0;   
+    audio.volume = volume;
+    audio.play();
+        
+        
+}
+function pauseAudio(audioId) {   
+    
+    const audio = document.getElementById(audioId);
+    intervalId[audioId] = setInterval(() => decreaseVolume(audio), 100);                   
+}
+function stopAudio(audioId) {
+    const audio = document.getElementById(audioId);
+    clearInterval(intervalIds[audioId]);
+    audio.pause();
+    audio.currentTime = 0;
+}
+function decreaseVolume(audio)
+{
+    if(audio.volume>=0){
+        audio.volume-=0.02;
+    }
+    else{
+    
+    audio.pause(audioId);
+    }
+}
+
+    
+</script>
+</body>
+</html>
