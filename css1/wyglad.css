@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 span {
-  color: brown;
+  color: rgb(131, 70, 131);
+  font-size: 26px;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 body {
@@ -25,8 +31,6 @@ body {
   color: white;
   font-size: 1.5em;
   margin-top: 10px;
-  height: 100%;
-  width: 100%;
 }
 .navbar nav {
   display: none;
@@ -123,7 +127,7 @@ nav li a:hover {
 }
 
 .col1 {
-  margin-top: -35em;
+  margin-top: -40em;
   top: 50%;
   left: 50%;
   transform: translate(-5%, 0%);
@@ -270,6 +274,12 @@ h6 {
     grid-template-columns: 180px auto;
     justify-content: unset;
   }
+  .col {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-left: 0em;
+  }
   .col1 {
     transform: translateY(100px);
   }
@@ -301,9 +311,229 @@ h6 {
     font-weight: bold;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1300px) {
   span {
-    color: brown;
+    color: rgb(131, 70, 131);
+    font-size: 26px;
+  }
+  body {
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/twenty.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: "Poppins";
+    padding-left: 5%;
+    padding-right: 6%;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+  .navbar .logo {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .primary-nav {
+    list-style-type: none;
+  }
+  .primary-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+  .primary-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .secondary-nav {
+    list-style-type: none;
+  }
+  .secondary-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  nav.menu-btn {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    z-index: 999;
+    width: 59%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+  }
+  nav ul.primary-nav {
+    margin-top: 5em;
+  }
+  nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+  }
+  nav li a:hover {
+    font-weight: bold;
+  }
+  .mobile-exit {
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    transform: translateY(130px);
+    align-items: center;
+    margin-left: 0em;
+    flex-direction: row;
+  }
+  .col {
+    float: right;
+    display: block;
+    flex-basis: 100%;
+    transform: translateY(-240px);
+    margin-left: 0;
+  }
+  .col p {
+    color: white;
+    font-size: 220px;
+    margin-right: 4em;
+  }
+  h1 {
+    color: white;
+    font-size: 60px;
+  }
+  button {
+    border-radius: 2em;
+    width: 28%;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  button:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+  .card {
+    float: right;
+    width: 220px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 0px 5px 5px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 12px 17px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.7s;
+  }
+  .card p {
+    font-size: 12px;
+    color: white;
+  }
+  .card:hover {
+    transform: scale(1.15);
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  h2 {
+    color: white;
+    margin-top: 0;
+    margin-left: 6px;
+    font-size: 19px;
+    pointer-events: none;
+  }
+  h3 {
+    color: white;
+    margin-top: 0;
+    margin-left: 135px;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  h4 {
+    color: white;
+    margin-top: 0;
+    margin-left: 140px;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  h5 {
+    color: white;
+    margin-top: 0;
+    margin-left: 21px;
+    font-size: 18px;
+    pointer-events: none;
+  }
+  h6 {
+    color: white;
+    margin-top: 3px;
+    margin-left: 95px;
+    font-size: 19px;
+    pointer-events: none;
+  }
+  .interpol {
+    color: white;
+    margin-top: -1px;
+    margin-left: 120px;
+    font-size: 20px;
+    pointer-events: none;
+  }
+  .slowdive {
+    color: white;
+    margin-top: -1px;
+    margin-left: 122px;
+    font-size: 18px;
+    pointer-events: none;
+  }
+  .card6 h6 {
+    color: white;
+    margin-top: 0;
+    margin-left: 140px;
+    font-size: 19px;
+  }
+  .col {
+    margin-top: 7em;
+  }
+  .col1 {
+    margin-top: -30em;
+    transform: translate(5%, 19%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px;
+  }
+  .opis {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  span {
+    color: rgb(131, 70, 131);
+    font-size: 26px;
   }
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/twenty.jpg");
@@ -396,8 +626,10 @@ h6 {
   }
   .col {
     float: right;
+    display: block;
     flex-basis: 100%;
     transform: translateY(-110px);
+    margin-left: 0;
   }
   .col p {
     color: white;
@@ -423,8 +655,8 @@ h6 {
   }
   .card {
     float: right;
-    width: 240px;
-    height: 270px;
+    width: 250px;
+    height: 280px;
     border-radius: 10px;
     padding: 0px 5px 5px 15px;
     box-sizing: border-box;
@@ -502,10 +734,10 @@ h6 {
     font-size: 19px;
   }
   .col {
-    margin-top: 3em;
+    margin-top: 6em;
   }
   .col1 {
-    margin-top: -8em;
+    margin-top: -10em;
     top: 26%;
     left: 50%;
     transform: translate(0%, 20%);
