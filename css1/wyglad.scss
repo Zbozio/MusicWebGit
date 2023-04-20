@@ -69,6 +69,35 @@ nav
     }
     
 }
+.cos {
+    position: relative;
+    
+  }
+  
+  .cos .dropdown {
+    display: none;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+    width:204px;
+    height: 315px;
+    font-size: 12px;
+    border-radius: 2em;
+    
+    
+      
+  }
+  .cos:hover .dropdown {
+    display: block;
+    
+    
+  }
+  .cos .dropdown li{
+    left: 0;
+    margin-left:-60px;
+    padding: 0.5px 45px;
+    margin-top:1em;
+    
+  }
 
 .mobile-menu {
     position: absolute;
@@ -420,6 +449,38 @@ background-image: url("../images/bloody.jpg");
         }
         
     }
+    .cos {
+        position: relative;
+        
+      }
+      
+      .cos .dropdown {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 1);
+        width:204px;
+        height: 315px;
+        font-size: 12px;
+        right:-8em;
+        border-radius: 2em;
+        
+        
+          
+      }
+      .cos:hover .dropdown {
+        display: block;
+        
+        
+      }
+      .cos .dropdown li{
+        left: 0;
+        margin-left:-60px;
+        padding: 0px 40px;
+        margin-top:0em;
+        
+        
+      }
     
     .mobile-menu {
         position: absolute;
@@ -689,6 +750,40 @@ background-image: url("../images/bloody.jpg");
         }
         
     }
+    
+      
+    .cos {
+        position: relative;
+        
+      }
+      
+      .cos .dropdown {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.5);
+        width:210px;
+        height: 305px;
+        font-size: 12px;
+        right:-8em;
+        border-radius: 2em;
+        
+        
+          
+      }
+      .cos:hover .dropdown {
+        display: block;
+        
+        
+      }
+      .cos .dropdown li{
+        left: 0;
+        margin-left:-60px;
+        padding: 0.5px 45px;
+        
+      }
+      
+      
     
     .mobile-menu {
         position: absolute;
