@@ -73,31 +73,37 @@ nav
     position: relative;
     
   }
+ 
   
   .cos .dropdown {
+    position: relative;
     display: none;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.2);
+    top:100%;
     width:204px;
     height: 315px;
     font-size: 12px;
     border-radius: 2em;
     
-    
+      
       
   }
   .cos:hover .dropdown {
     display: block;
     
-    
+      
   }
+  
   .cos .dropdown li{
-    left: 0;
+    
     margin-left:-60px;
     padding: 0.5px 45px;
     margin-top:1em;
+    right:0;
     
   }
+  
 
 .mobile-menu {
     position: absolute;
@@ -107,9 +113,11 @@ nav
     cursor: pointer;
   }
 
-
+  
 .secondary-nav  {
     list-style-type:none;
+  
+    
    a{
     text-decoration: none;
     color:white;
@@ -128,9 +136,11 @@ nav{
     background:#20272E;
     height:100vh;
     padding:1em;
+    
+    
     ul.primary-nav
     {
-        margin-top:5em;
+        margin-top:4em;
     }
     li{
         a{
@@ -761,12 +771,13 @@ background-image: url("../images/bloody.jpg");
         display: none;
         position: absolute;
         z-index: 999;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         width:210px;
         height: 305px;
         font-size: 12px;
         right:-8em;
         border-radius: 2em;
+        margin-top: -1.5em;
         
         
           

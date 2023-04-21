@@ -108,10 +108,19 @@
 		nav.classList.add('menu-btn')
 
 	})
-	mobileBtnExit.addEventListener('click',()=>{
+    
+    
+        mobileBtnExit.addEventListener('click',()=>{
 		nav.classList.remove('menu-btn')
-
+    
 	})
+    const dropdown = document.querySelector('.cos .dropdown');
+const secondaryNav = document.querySelector('.secondary-nav');
+
+dropdown.addEventListener('click', function() {
+  secondaryNav.classList.toggle('active');
+});
+	
     
     var intervalId=[];
     var volume = 0.2;
