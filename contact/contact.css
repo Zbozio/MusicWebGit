@@ -149,6 +149,55 @@ nav li a:hover {
   box-sizing: border-box;
 }
 
+@media only screen and (min-width: 1600px) {
+  span {
+    color: rgb(131, 70, 131);
+    font-size: 26px;
+  }
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/twenty.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: "Poppins";
+    padding-left: 5%;
+    padding-right: 6%;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+  .navbar .logo {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .primary-nav {
+    list-style-type: none;
+  }
+  .primary-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+  }
+  .primary-nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .secondary-nav {
+    list-style-type: none;
+  }
+  .secondary-nav a {
+    text-decoration: none;
+    color: white;
+  }
+}
 @media only screen and (min-width: 1920px) {
   span {
     color: rgb(131, 70, 131);
