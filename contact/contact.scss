@@ -7,6 +7,7 @@ span{
 }
 html {
     overflow-x: hidden;
+    overflow-y: hidden;
     
   }
 
@@ -95,7 +96,7 @@ nav.menu-btn{
 nav{
     position:fixed;
     z-index:999;
-    width:54%;
+    width:auto;
     right:0;
     top:0;
     background:#20272E;
@@ -118,6 +119,7 @@ nav{
             }
         }
     }
+   
 }
 .mobile-exit{
     float:right;
@@ -179,12 +181,134 @@ nav{
     }
     
 }
-@media only screen and (min-width:1600px){
+.cos {
+    position: relative;
+    
+  }
+ 
+  
+  .cos .dropdown {
+    
+    display: none;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+    top:100%;
+    width:204px;
+    height: 315px;
+    font-size: 12px;
+    border-radius: 2em;
+    float:right;
+    margin-bottom: 10px;
+      
+      
+  }
+  .cos:hover .dropdown {
+    display: block;
+    
+      
+  }
+  
+  .cos .dropdown li{
+    
+    margin-left:-60px;
+    padding: 0.5px 45px;
+    margin-top:1em;
+    right:0;
+    
+  }
+@media only screen and (min-width:805px){
+
+    .navbar nav {
+        display:flex;
+        justify-content: space-between;
+        background:none;
+        position:unset;
+        height:auto;
+        width:100%;
+        padding:0;
+        
+        ul{
+            display:flex;
+            
+        }
+        a{
+            color:white;
+            font-size:1.2em;
+            padding: .1em 1em;
+            margin-top: 25px;
+            
+        }
+        ul.primary-nav{
+            margin:0;
+    
+        }
+        .secondary-nav
+        {
+            margin-top: 1px;
+        }
+     li.current a{
+        font-weight:bold;
+    
+     } 
+    
+    }
+
+    .mobile-menu,.mobile-exit{
+        display:none;
+    }
+    .navbar .container{
+        display:grid;
+        grid-template-columns: 180px auto;
+        justify-content:unset;
+        
+      
+        
+    }
+    .cos {
+        position: relative;
+        
+      }
+      
+      .cos .dropdown {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 1);
+        width:204px;
+        height: 315px;
+        font-size: 12px;
+        right:-8em;
+        border-radius: 2em;
+        
+        
+          
+      }
+      .cos:hover .dropdown {
+        display: block;
+        
+        
+      }
+      .cos .dropdown li{
+        left: 0;
+        margin-left:-60px;
+        padding: 0px 40px;
+        margin-top:0em;
+        
+        
+      }
+}
+
+
+
+
+
+
+@media only screen and (min-width:1500px){
     span{
           color:rgb(131, 70, 131);
     font-size:26px;
     }
-    
+
     body {
        
         background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
@@ -213,11 +337,11 @@ nav{
         color:white;
         font-size:1.5em;
         margin-top: 10px;
-        height: 100%;
-        width: 100%;
+        
         
         
        }  
+      
        
     }  
     
@@ -246,7 +370,19 @@ nav{
         text-decoration: none;
         color:white;
     }}
+   
+    .container{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .mobile-menu{
+        display:none;
+    }
 }
+
 
 @media only screen and (min-width:1920px){
     span{
