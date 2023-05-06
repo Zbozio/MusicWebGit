@@ -6,6 +6,18 @@ span{
     
     
 }
+.about{
+    color:white;
+font-size: 26px;
+padding: 20px;
+
+}
+.about1{
+    color:white;
+font-size: 18px;
+padding: 20px;
+
+}
 html {
     overflow-x: hidden;
     overflow-y: visible;
@@ -389,7 +401,7 @@ background-image: url("../images/bloody.jpg");
     {
         margin-top: 1px;
     }
- li.current a{
+.current {
     font-weight:bold;
 
  } 

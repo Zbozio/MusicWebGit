@@ -4,6 +4,18 @@ span {
   font-size: 26px;
 }
 
+.about {
+  color: white;
+  font-size: 26px;
+  padding: 20px;
+}
+
+.about1 {
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+}
+
 html {
   overflow-x: hidden;
   overflow-y: visible;
@@ -334,7 +346,7 @@ h6 {
   .navbar nav .secondary-nav {
     margin-top: 1px;
   }
-  .navbar nav li.current a {
+  .navbar nav .current {
     font-weight: bold;
   }
 }

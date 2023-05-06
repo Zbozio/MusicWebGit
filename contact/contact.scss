@@ -5,6 +5,7 @@ span{
     
     
 }
+
 html {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -246,12 +247,13 @@ nav{
         {
             margin-top: 1px;
         }
-     li.current a{
+    
+    
+    }
+    .current {
         font-weight:bold;
     
      } 
-    
-    }
 
     .mobile-menu,.mobile-exit{
         display:none;

@@ -203,7 +203,7 @@ nav li a:hover {
   .navbar nav .secondary-nav {
     margin-top: 1px;
   }
-  .navbar nav li.current a {
+  .current {
     font-weight: bold;
   }
   .mobile-menu, .mobile-exit {
