@@ -468,17 +468,16 @@ h6 {
   .row {
     display: flex;
     justify-content: center;
-    transform: translateY(130px);
+    transform: translateY(40px);
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
-    box-sizing: border-box;
   }
   .col {
     float: right;
     display: block;
     flex-basis: 100%;
-    transform: translateY(-240px);
+    transform: translateY(-140px);
     margin-left: 0;
     height: 100% p;
     height-color: white;
@@ -586,7 +585,7 @@ h6 {
     margin-top: 7em;
   }
   .col1 {
-    margin-top: -30em;
+    margin-top: -20em;
     transform: translate(5%, 19%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -595,6 +594,12 @@ h6 {
   }
   .opis {
     display: none;
+  }
+  section {
+    background-color: black;
+    height: 30%;
+    width: 100%;
+    color: white;
   }
 }
 @media only screen and (min-width: 1600px) {
