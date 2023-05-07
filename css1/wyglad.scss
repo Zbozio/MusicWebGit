@@ -441,6 +441,7 @@ background-image: url("../images/bloody.jpg");
         width:100vw;
         height: 100vh;
         
+        
       }
     .navbar
     {
@@ -572,6 +573,9 @@ background-image: url("../images/bloody.jpg");
         align-items: center;
         margin-left: 0em;
         flex-direction: row;
+        box-sizing: border-box;
+        
+        
         
     }
     .col{
@@ -719,9 +723,7 @@ background-image: url("../images/bloody.jpg");
     .opis{
         display: none;
     }
- .hero{
-    background-color: black;
- }   
+  
 }
 
 @media only screen and (min-width:1600px){

@@ -472,6 +472,7 @@ h6 {
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
+    box-sizing: border-box;
   }
   .col {
     float: right;
@@ -594,9 +595,6 @@ h6 {
   }
   .opis {
     display: none;
-  }
-  .hero {
-    background-color: black;
   }
 }
 @media only screen and (min-width: 1600px) {
