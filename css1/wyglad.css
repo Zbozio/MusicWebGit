@@ -367,8 +367,8 @@ h6 {
     background-position: center;
     margin: 0;
     font-family: "Poppins";
-    padding-left: 5%;
-    padding-right: 6%;
+    padding-left: 0%;
+    padding-right: 0%;
     box-sizing: border-box;
     background-repeat: repeat;
     width: 100vw;
@@ -445,6 +445,8 @@ h6 {
     background: #20272E;
     height: 100vh;
     padding: 1em;
+    padding-left: 5%;
+    padding-right: 6%;
   }
   nav ul.primary-nav {
     margin-top: 5em;
@@ -472,6 +474,8 @@ h6 {
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
+    padding-left: 5%;
+    padding-right: 6%;
   }
   .col {
     float: right;
