@@ -38,6 +38,7 @@ body {
     width:100vw;
     height: 100vh;
     
+    
   }
 .navbar
 {
@@ -724,7 +725,7 @@ background-image: url("../images/bloody.jpg");
     }
   section{
     background-color: black;
-    height: 30%;
+    height: 5%;
     width: 100%;
     color:white;
     
@@ -732,6 +733,21 @@ background-image: url("../images/bloody.jpg");
   .section1{
     padding-left: 5%;
         padding-right: 6%;
+        
+  }
+  .container2{
+    padding-left: 5%;
+        padding-right: 6%;
+        cursor:pointer;
+  }
+  .insta{
+    height: 2%;
+    width: 2%;
+    float:right;
+    cursor:pointer;
+    margin-left:0.5em;
+    
+    
   }
 }
 
