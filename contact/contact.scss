@@ -170,7 +170,19 @@ nav{
 
         }
     }
-    .area,input{
+    .area{
+        margin: 0 auto;
+        display:block;
+        width:unset;
+        padding:.8em;
+        margin-bottom:1.5em;
+        border-radius:.3em;
+        border:1px solid gray;
+        box-sizing:border-box;
+        
+        
+    }
+    input{
         margin: 0 auto;
         display:block;
         width:unset;

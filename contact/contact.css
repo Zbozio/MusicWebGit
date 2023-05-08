@@ -139,7 +139,17 @@ nav li a:hover {
   transform: scale(1.15);
   background-color: rgb(227, 221, 221);
 }
-.container1 .area, .container1 input {
+.container1 .area {
+  margin: 0 auto;
+  display: block;
+  width: unset;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+.container1 input {
   margin: 0 auto;
   display: block;
   width: unset;
