@@ -445,8 +445,6 @@ h6 {
     background: #20272E;
     height: 100vh;
     padding: 1em;
-    padding-left: 5%;
-    padding-right: 6%;
   }
   nav ul.primary-nav {
     margin-top: 5em;
@@ -474,8 +472,6 @@ h6 {
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 6%;
   }
   .col {
     float: right;
@@ -604,6 +600,10 @@ h6 {
     height: 30%;
     width: 100%;
     color: white;
+  }
+  .section1 {
+    padding-left: 5%;
+    padding-right: 6%;
   }
 }
 @media only screen and (min-width: 1600px) {

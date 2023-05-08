@@ -543,8 +543,7 @@ background-image: url("../images/bloody.jpg");
         background:#20272E;
         height:100vh;
         padding:1em;
-        padding-left: 5%;
-        padding-right: 6%;
+        
         ul.primary-nav
         {
             margin-top:5em;
@@ -575,8 +574,7 @@ background-image: url("../images/bloody.jpg");
         align-items: center;
         margin-left: 0em;
         flex-direction: row;
-        padding-left: 5%;
-        padding-right: 6%;
+       
         
         
         
@@ -734,6 +732,10 @@ background-image: url("../images/bloody.jpg");
     width: 100%;
     color:white;
     
+  }
+  .section1{
+    padding-left: 5%;
+        padding-right: 6%;
   }
 }
 
