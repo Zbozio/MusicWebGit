@@ -157,6 +157,7 @@ nav li a:hover {
 .col .opis1 {
   color: white;
   font-size: 22px;
+  width: 98%;
 }
 
 .col {
@@ -880,10 +881,10 @@ section {
     font-size: 19px;
   }
   .col {
-    margin-top: 12em;
+    margin-top: 14em;
   }
   .col1 {
-    margin-top: -10em;
+    margin-top: -7em;
     top: 26%;
     left: 50%;
     transform: translate(0%, 20%);
