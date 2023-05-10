@@ -349,7 +349,41 @@ background-image: url("../images/bloody.jpg");
 .card6{
     background-image: url("../images/slowdive1.jpg");
 }
-
+section{
+    background-color: black;
+    height:5.9%;
+    width: 100%;
+    color:white;
+    
+    
+  }
+  
+  .container2{
+    padding-left: 5%;
+        padding-right: 6%;
+        
+  }
+ 
+  .insta{
+    height: 2%;
+    width: 2%;
+    float:right;
+    cursor:pointer;
+    margin-left:0.5em;
+    margin-top: 0.5em;
+    
+    
+  }
+  .fb{
+    height: 2%;
+    width: 2%;
+    float:right;
+    cursor:pointer;
+    margin-left:0.5em;
+    margin-top: 0.4em;
+    
+    
+  }
 
 
 @media only screen and (min-width:805px){
@@ -778,8 +812,6 @@ background-image: url("../images/bloody.jpg");
         background-position: center;
         margin: 0;
         font-family: "Poppins";
-        padding-left: 5%;
-        padding-right: 6%;
         box-sizing: border-box;
         background-repeat: repeat;
         width:100vw;
@@ -916,18 +948,19 @@ background-image: url("../images/bloody.jpg");
     .row{
         display:flex;
         justify-content: center;
-        transform: translateY(130px);
+        transform: translateY(0px);
         align-items: center;
         margin-left: 0em;
-        flex-direction: row;
+        flex-direction: row;  
     }
     .col{
         
         float:right;
         display: block;
         flex-basis:100%;
-        transform: translateY(-110px);
+        transform: translateY(-100px);
         margin-left: 0;
+        height: 100%
         
         p{
             color:white;
@@ -1050,7 +1083,8 @@ background-image: url("../images/bloody.jpg");
         font-size:19px;
     }
     .col{
-        margin-top: 6em;
+        margin-top: 12em;
+    
         
     }
     .col1{
@@ -1063,4 +1097,43 @@ background-image: url("../images/bloody.jpg");
     .opis{
         display: none;
     }
+    section{
+        background-color: black;
+        height:5.9%;
+        width: 100%;
+        color:white;
+        bottom:0;
+        position: fixed;
+        
+        
+        
+      }
+      
+      .container2{
+        padding-left: 5%;
+            padding-right: 6%;
+            
+            
+      }
+     
+      .insta{
+        height: 2%;
+        width: 2%;
+        float:right;
+        cursor:pointer;
+        margin-left:0.5em;
+        margin-top: 0.5em;
+        
+        
+      }
+      .fb{
+        height: 2%;
+        width: 2%;
+        float:right;
+        cursor:pointer;
+        margin-left:0.5em;
+        margin-top: 0.4em;
+        
+        
+      }
 }
