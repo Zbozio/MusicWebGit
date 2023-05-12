@@ -11,6 +11,7 @@ html {
     
     
   }
+  
 
 
 body {
@@ -280,6 +281,45 @@ nav{
     }
     .cos {
         position: relative;
+        
+      }
+      .hero1{
+        background-color: black;
+        height:5.9%;
+        width: 100%;
+        color:white;
+        bottom:0;
+        position: fixed;
+        
+        
+        
+      }
+      
+      .container2{
+        padding-left: 0%;
+            padding-right: 11%;
+            
+            
+      }
+     
+      .insta{
+        height: 2%;
+        width: 2%;
+        float:right;
+        cursor:pointer;
+        margin-left:0.5em;
+        margin-top: 0.5em;
+        
+        
+      }
+      .fb{
+        height: 2%;
+        width: 2%;
+        float:right;
+        cursor:pointer;
+        margin-left:0.5em;
+        margin-top: 0.4em;
+        
         
       }
       
