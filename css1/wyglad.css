@@ -306,7 +306,7 @@ h6 {
 }
 
 section {
-  background-color: black;
+  background-color: white;
   height: 5.9%;
   width: 100%;
   color: white;
@@ -627,7 +627,7 @@ section {
     display: none;
   }
   section {
-    background-color: black;
+    background-color: white;
     height: 5.9%;
     width: 100%;
     color: white;
@@ -893,7 +893,7 @@ section {
     display: none;
   }
   section {
-    background-color: black;
+    background-color: #1b1c1b;
     height: 5.9%;
     width: 100%;
     color: white;

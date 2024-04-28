@@ -1,0 +1,9 @@
+.imageBand{
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+.bodyPage{
+    display: flex;
+    justify-content: right;
+}
