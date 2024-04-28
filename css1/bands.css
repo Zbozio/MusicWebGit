@@ -3,7 +3,61 @@
     max-height: 500px;
     border-radius: 20px;
 }
-.bodyPage{
+.bodyPage {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+}
+
+.leftCol{
+    flex-basis: 70%;
+}
+
+.rightCol {
+    flex-basis: 30%;
+}
+.leftCol {
+    margin-right: 200px; /* dowolna wartość marginesu */
+    margin-top:1rem;
+    font-size: 20px;
+    
+}
+
+.rightCol {
+    margin-left: 10px;
+    margin-top: 5rem;
+}
+.bloodyTitle{
+    font-size: 40px;;
+}
+.bandText{
+    color:white;
+}
+blockquote {
+    margin-top:8rem;
+    
+    color:white;
+    border-left: 4px solid #333; /* lub inny kolor */
+   
+    font-style: italic; /* kursywa */
+    font-size: 18px /* rozmiar czcionki */
+}
+.bloodyTitle {
+    font-family: 'Arial Black', sans-serif; /* wybierz odpowiednią czcionkę */
+    font-size: 2.7em; /* dostosuj rozmiar czcionki */
+    color: #FF3366; /* lub inny kolor */
+    text-align: center; /* lub inna pozycja */
+    text-transform: uppercase; /* lub inna transformacja tekstu */
+    letter-spacing: 2px; /* odstępy między literami */
+    margin-bottom: 20px; /* odstęp od następnego elementu */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* dodanie cienia */
+}
+.bandText {
+    font-family: 'Georgia', serif; /* wybierz odpowiednią czcionkę */
+    font-size: 1.1em; /* dostosuj rozmiar czcionki */
+    line-height: 1.6; /* odstęp między liniami */
+    color:white;
+    text-align: justify; /* lub inna pozycja */
+    margin-bottom: 30px; /* odstęp od następnego elementu */
+   
+    padding-left: 10px; /* wcięcie po lewej stronie tekstu */
 }
