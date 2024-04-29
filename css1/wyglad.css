@@ -713,7 +713,7 @@ section {
 
   .search-input {
     margin-top: 20px;
-    
+    margin-right: 150px;
     
     width: 200px; /* szerokość pola wyszukiwania */
     height: 40px;

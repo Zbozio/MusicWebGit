@@ -31,17 +31,24 @@
                 </li>
             </ul>
             <ul class="secondary-nav">
-                <input class="search-input" list="bands" type="search" placeholder="Enter band name">
-                <datalist id="bands">
-                    <option value="My Bloody Valentine">
-                    <option value="Radiohead">
-                    <option value="The Beatles">
-                    <option value="Led Zeppelin">
-                    <option value="Nirvana">
-                    <option value="Pink Floyd">
+                <input class="search-input" list="bands" type="search" placeholder="Enter band name" oninput="filterBands(this.value)">
+              
+                
+                
+                <datalist style="display: none;"  id="bands">
+                    <option data-value="MyBloodyValentine.html" value="My Bloody Valentine" data-country="england">
+                    <option data-value="Radiohead.html" value="Radiohead" data-country="england">
+                    <option data-value="Slowdive.html" value="Slowdive">
+                    <option data-value="thexx.html" value="The xx">
+                    <option data-value="TheNeighbourhood.html" value="The Neighbourhood">
+                    <option data-value="Interpol.html" value="Interpol">
+
+                          
+                    <!-- Pozostałe opcje -->
                 </datalist>
-                <button class="search-button" id="search-link" href="#">Search</button>
-                <li><a href="#">Events</a> </li>
+                
+               
+                <li><a href="Event.html">Events</a> </li>
                 <li><a href="contact.html">Contact</a> </li>
             </ul>
         </nav>
@@ -173,8 +180,31 @@ function decreaseVolume(audio)
     audio.pause(audioId);
     }
 }
+//////
+document.querySelector('.search-input').addEventListener('input', function() {
+    var selectedOption = document.querySelector('#bands [value="' + this.value + '"]');
+    if (selectedOption) {
+        var link = selectedOption.dataset.value;
+        window.location.href = link;
+    }
+});
 
+/////
+function filterBands(value) {
+    // Pobieramy wszystkie opcje z elementu datalist
+    var options = document.getElementById('bands').querySelectorAll('option');
     
+    // Iterujemy przez opcje i ukrywamy te, których wartość nie pasuje do wpisanego tekstu lub nie są związane z krajem "England"
+    options.forEach(function(option) {
+        var optionValue = option.value.toLowerCase();
+        var optionCountry = option.dataset.country ? option.dataset.country.toLowerCase() : '';
+        if ((optionValue.includes(value.toLowerCase()) && optionCountry === 'england') || value === '') {
+            option.style.display = 'block'; // Pokazujemy opcję, jeśli pasuje do wpisanego tekstu i jest związana z krajem "England", lub wartość jest pusta
+        } else {
+            option.style.display = 'none'; // Ukrywamy opcję, jeśli nie pasuje lub nie jest związana z krajem "England"
+        }
+    });
+}
 
 
 
