@@ -31,6 +31,16 @@
                 </li>
             </ul>
             <ul class="secondary-nav">
+                <input class="search-input" list="bands" type="search" placeholder="Enter band name">
+                <datalist id="bands">
+                    <option value="My Bloody Valentine">
+                    <option value="Radiohead">
+                    <option value="The Beatles">
+                    <option value="Led Zeppelin">
+                    <option value="Nirvana">
+                    <option value="Pink Floyd">
+                </datalist>
+                <button class="search-button" id="search-link" href="#">Search</button>
                 <li><a href="#">Events</a> </li>
                 <li><a href="contact.html">Contact</a> </li>
             </ul>
@@ -56,28 +66,28 @@
                     </audio>
                     
                 </div>
-                <a href="Radiohead.html">
+                <a  class="aaa"    href="Radiohead.html">
                 <div class="card card2"onmouseover="playAudio('myAudio8')" onmouseout="pauseAudio('myAudio8')">
                     <h6>Radiohead</h6>
                     <audio id="myAudio8">
                         <source src="sounds/no.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-                <a href="Interpol.html"></a>
+                <a href="Interpol.html">
                 <div class="card card3"onmouseover="playAudio('myAudio6')" onmouseout="pauseAudio('myAudio6')">
                     <h4 class="interpol">Interpol</h4>
                     <audio id="myAudio6">
                         <source src="sounds/ob.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-                <a href="TheNeighbourhood.html"></a>
+                <a href="TheNeighbourhood.html">
                 <div class="card card4" onmouseover="playAudio('myAudio4')" onmouseout="pauseAudio('myAudio4')">
                     <h5>The Neighbourhood</h5>
                     <audio id="myAudio4">
                         <source src="sounds/pre.mp3" type="audio/mpeg">
                     </audio>
                 </div>
-                <a href="Thexx.html"></a>
+                <a href="Thexx.html">
                 <div class="card card5" onmouseover="playAudio('myAudio1')" onmouseout="pauseAudio('myAudio1')">
                     <h3>The xx</h3>
                     <audio id="myAudio1">
@@ -85,7 +95,7 @@
                     </audio>
 
                 </div>
-                <a href="Slowdive.html"></a>
+                <a href="Slowdive.html">
                 <div class="card card6"onmouseover="playAudio('myAudio3')" onmouseout="pauseAudio('myAudio3')">
                     <h4 class="slowdive">Slowdive</h4>
                     <audio id="myAudio3">
@@ -165,6 +175,9 @@ function decreaseVolume(audio)
 }
 
     
+
+
+
 </script>
 </body>
 </html>

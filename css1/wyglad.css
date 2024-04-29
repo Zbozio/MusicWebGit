@@ -15,7 +15,10 @@ span {
   font-size: 18px;
   padding: 20px;
 }
-
+/* .aaa{
+  padding: 0;
+  margin: 0;
+} */
 html {
   overflow-x: hidden;
   overflow-y: visible;
@@ -64,6 +67,9 @@ body {
 .cos {
   position: relative;
 }
+
+
+
 
 .cos .dropdown {
   position: relative;
@@ -147,6 +153,9 @@ nav li a:hover {
   align-items: center;
   margin-left: 1em;
   flex-direction: column;
+  
+ 
+  
 }
 
 .col {
@@ -503,6 +512,8 @@ section {
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
+    
+    
   }
   .col {
     float: right;
@@ -699,6 +710,15 @@ section {
   .cos {
     position: relative;
   }
+
+  .search-input {
+    margin-top: 20px;
+    
+    
+    width: 200px; /* szerokość pola wyszukiwania */
+    height: 40px;
+  }
+  
   .cos .dropdown {
     display: none;
     position: absolute;
@@ -771,6 +791,7 @@ section {
     align-items: center;
     margin-left: 0em;
     flex-direction: row;
+   
   }
   .col {
     float: right;
@@ -880,9 +901,9 @@ section {
     margin-left: 140px;
     font-size: 19px;
   }
-  .col {
+  /* .col {
     margin-top: 14em;
-  }
+  } */
   .col1 {
     margin-top: -7em;
     top: 26%;
